@@ -8,11 +8,7 @@
 #          classifications to the true identity of the pets in the images, and
 #          summarizes how well the CNN performed on the image classification task. 
 #          Note that the true identity of the pet (or object) in the image is 
-#          indicated by the filename of the image. Therefore, your program must
-#          first extract the pet image label from the filename before
-#          classifying the images using the pretrained CNN model. With this 
-#          program we will be comparing the performance of 3 different CNN model
-#          architectures to determine which provides the 'best' classification.
+#          indicated by the filename of the image. 
 #
 # Use argparse Expected Call with <> indicating expected user input:
 #      python check_images.py --dir <directory with images> --arch <model>
@@ -34,14 +30,8 @@ from print_results import print_results
 
 # Main program function defined below
 def main():
-    # TODO 0: Measures total program runtime by collecting start time
     start_time = time()
     
-    # TODO 1: Define get_input_args function within the file get_input_args.py
-    # This function retrieves 3 Command Line Arugments from user as input from
-    # the user running the program from a terminal window. This function returns
-    # the collection of these command line arguments from the function call as
-    # the variable in_arg
     in_arg = get_input_args()
 
     # Function that checks command line arguments using in_arg  
