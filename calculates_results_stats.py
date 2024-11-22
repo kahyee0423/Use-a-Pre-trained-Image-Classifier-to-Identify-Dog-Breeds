@@ -36,31 +36,8 @@
 #            pct_correct_dogs - percentage of correctly classified dogs
 #            pct_correct_breed - percentage of correctly classified dog breeds
 #            pct_correct_notdogs - percentage of correctly classified NON-dogs
-#
-##
-# TODO 5: Define calculates_results_stats function below, please be certain to replace None
-#       in the return statement with the results_stats_dic dictionary that you create 
-#       with this function
-# 
+
 def calculates_results_stats(results_dic):
-    """
-    Calculates statistics from the results dictionary and stores them in a new
-    dictionary called results_stats_dic.
-    Parameters:
-        results_dic - Dictionary with key as image filename and value as a List:
-                      index 0 = Pet Image Label (string)
-                      index 1 = Classifier Label (string)
-                      index 2 = 0/1 where 1 = labels match , 0 = labels don't match
-                      index 3 = 0/1 where 1= Pet Image Label is a dog, 0 = Pet Image Label isn't a dog
-                      index 4 = 0/1 where 1= Classifier Label is a dog, 0 = Classifier Label isn't a dog
-    Returns:
-        results_stats_dic - Dictionary containing counts and percentages:
-                            Counts:
-                            n_images, n_dogs_img, n_notdogs_img, n_correct_dogs,
-                            n_correct_notdogs, n_correct_breed
-                            Percentages:
-                            pct_correct_dogs, pct_correct_breed, pct_correct_notdogs
-    """
     # Initialize statistics dictionary
     results_stats_dic = {
         'n_images': 0,
@@ -100,4 +77,3 @@ def calculates_results_stats(results_dic):
     )
 
     return results_stats_dic
-
